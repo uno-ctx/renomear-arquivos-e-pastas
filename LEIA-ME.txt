@@ -1,0 +1,40 @@
+RENOMEAR - INTERFACE LOCAL HTML / CSS / JAVASCRIPT
+
+1. Abra Iniciar.bat. O navegador sera aberto automaticamente.
+2. Mantenha a janela do aplicativo aberta durante o uso.
+3. Escolha a pasta, uma transformacao e clique em Gerar previa.
+4. Corrija os nomes na tabela e marque os itens desejados.
+5. Clique em Aplicar alteracoes e confirme.
+6. Para encerrar o servidor local, feche a janela do Iniciar.bat.
+
+O aplicativo usa Node.js. Neste computador, o iniciador tambem encontra
+o Node.js disponibilizado pelo Codex. Em outro computador, instale Node.js.
+Nao abra index.html diretamente: use sempre Iniciar.bat.
+Todos os arquivos desta pasta precisam permanecer juntos.
+
+Somente itens diretos da pasta escolhida sao considerados. Ocultos,
+itens de sistema e links simbolicos/juncoes sao ignorados.
+A extensao final dos arquivos e preservada por padrao. Desmarque a opcao
+se desejar modificar tambem a extensao. Nao ha conversao do conteudo.
+Os dicionarios sugerem separacoes; voce deve revisar ambiguidades.
+Nenhum arquivo ou nome e enviado para servicos externos.
+Nao e necessario internet durante o uso.
+
+Em caso de falha, o aplicativo tenta restaurar os nomes originais.
+Se nao conseguir, a mensagem informa os caminhos a verificar.
+Depois de uma falha na renomeacao, gere uma nova previa.
+
+CREDITOS: DICIONARIOS
+Hermit Dave / FrequencyWords, listas pt_br e en de 2016 (50 mil cada).
+https://github.com/hermitdave/FrequencyWords
+https://github.com/hermitdave/FrequencyWords/blob/master/content/2016/pt_br/pt_br_50k.txt
+https://github.com/hermitdave/FrequencyWords/blob/master/content/2016/en/en_50k.txt
+Conteudo dos dicionarios: CC BY-SA 4.0.
+https://creativecommons.org/licenses/by-sa/4.0/
+Adaptacao: compressao e normalizacao de caixa/acentos para consulta;
+filtragem de entradas alfabeticas. Dados derivados sob CC BY-SA 4.0.
+
+TEMAS (v4.1)
+No topo da interface, escolha Claro ou Escuro.
+O tema claro original permanece como padrao. O escuro usa linhas laranja,
+detalhes verde-limao e dourados. A preferencia e salva neste navegador.

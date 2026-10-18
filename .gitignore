@@ -1,0 +1,8 @@
+.preferences.json
+node_modules/
+.env
+.env.*
+!.env.example
+*.log
+Thumbs.db
+Desktop.ini

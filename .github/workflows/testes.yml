@@ -1,0 +1,23 @@
+name: Testes Windows
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  testes:
+    runs-on: windows-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Verificar sintaxe
+        run: |
+          node --check server.js
+          node --check public/app.js
+          node --check public/theme.js
+      - name: Executar testes
+        run: node --test --test-concurrency=1 tests/renomear.test.cjs
