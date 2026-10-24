@@ -46,6 +46,14 @@ A suíte cria seus próprios diretórios temporários, sem usar os projetos pess
 
 Validação local de 18/10/2026: **59 testes aprovados, zero falhas**. O fluxo principal também foi exercitado pela interface. O diálogo nativo de seleção de pastas ainda tem validação visual pendente; outros computadores e compartilhamentos de rede não foram abrangidos. A automação no GitHub Actions executa a suíte em Windows.
 
+### Revalidacao de 24/10/2026
+
+- Node.js 24.20.0: sintaxe aprovada para `server.js`, `public/app.js` e `public/theme.js`.
+- Ambiente local restrito: **50 testes aprovados de 59**. Os nove resultados restantes incluem um teste de juncoes bloqueado por `EPERM`, sete testes HTTP bloqueados por `EACCES` em `127.0.0.1` e a falha agregada do grupo HTTP. A suite completa nao foi aprovada nessa execucao.
+- A execucao usou `TEMP` e `TMP` em uma pasta temporaria com permissao de escrita; o temporario padrao impedia renomeacoes.
+- GitHub Actions: execucao Windows do commit `12317fa` aprovada em 18/10/2026: [ver execucao](https://github.com/uno-ctx/renomear-arquivos-e-pastas/actions/runs/39177472192).
+- A interface e o dialogo nativo de selecao de pastas nao foram revalidados em 24/10. A validacao visual permanece pendente.
+
 ## Arquivos principais
 
 | Arquivo | Função |
